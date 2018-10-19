@@ -15,10 +15,18 @@
 
 예) HSSFSheet sheet = (HSSFSheet) wb.createSheet();
 
-3. 
+3. 엑셀 셀 위치에 데이터를 정렬하기 위한 객체를 선언
+
+예) Row row = null;   // 엑셀의 줄을 구분하기 위해 사용되며 0번째 부터 시작된다 (0이 첫번째 줄이며 short타입이다)
+    Cell cell = null; // 하나의 셀을 구분하기 위해 사용되며 0번째 부터 시작된다 (엑셀로 보자면 A, B, C, D 로 나며 ROW와 마찬가지로 short타입이다)
+    int rowIdx = 0;   // 
+    int cellCount 0;
+    
+
 
 셀 병합 = CellRangeAddress(시작 행, 끝나는 행, 시작 열, 끝나는 열)
 // 행은 1부터 시작 열은 0부터 시작
-
+셀 저장 = setCellValue()
+-> 셀에 한글이 깨질 시 cell.setEncoding(HSSFCell.ENCODING_UTF_8);
 
 
