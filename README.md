@@ -25,7 +25,7 @@
 
 
 셀 병합 = CellRangeAddress(시작 행, 끝나는 행, 시작 열, 끝나는 열)
-// 행은 1부터 시작 열은 0부터 시작
+// 행과 열은 0부터 시작
 셀 저장 = setCellValue()
 -> 셀에 한글이 깨질 시 cell.setEncoding(HSSFCell.ENCODING_UTF_8);
 
