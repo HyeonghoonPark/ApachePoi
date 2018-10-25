@@ -22,7 +22,7 @@
     int rowIdx = 0;   // 
     int cellCount 0;
     
-
+   
 
 셀 병합 = CellRangeAddress(시작 행, 끝나는 행, 시작 열, 끝나는 열)
 // 행과 열은 0부터 시작
